@@ -544,20 +544,66 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.max-w-screen-m {
+  max-width: 375px;
+}
+
+.max-w-screen-d {
+  max-width: 1280px;
+}
+
+.max-w-screen-t {
+  max-width: 768px;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.text-center {
+  text-align: center;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
 
-.font-bold {
-  font-weight: 700;
-}
-
-.text-orange-700 {
+.text-orange-400 {
   --tw-text-opacity: 1;
-  color: rgb(194 65 12 / var(--tw-text-opacity));
+  color: rgb(251 146 60 / var(--tw-text-opacity));
 }
 
-.underline {
-  text-decoration-line: underline;
+@media (min-width: 768px) {
+  .t\:max-w-screen-t {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .d\:max-w-screen-d {
+    max-width: 1280px;
+  }
 }

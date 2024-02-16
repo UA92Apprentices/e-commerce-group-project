@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["Poppins"],
+      },
       screens: {
         m: "375px",
         t: "768px",

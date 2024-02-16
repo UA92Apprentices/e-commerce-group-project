@@ -8,6 +8,9 @@ module.exports = {
         t: "768px",
         d: "1280px",
       },
+      colors: {
+        "travel-orange": "#F28138",
+      },
     },
   },
   plugins: [],

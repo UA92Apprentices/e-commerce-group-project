@@ -1,10 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,js}"],
+  content: ["./**/*.{html,js}"],
   theme: {
     extend: {
       backgroundImage: {
-        "hero-pattern": "url('/images/team-photo 1.svg')",
+        "hero-pattern": "url('/assets/images/team-photo 1.svg')",
+        "team-photo": "url('/assets/images/team-photo 1.svg')",
       },
       fontFamily: {
         sans: ["Poppins"],

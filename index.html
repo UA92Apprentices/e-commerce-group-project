@@ -404,6 +404,49 @@
           </div>
         </div>
       </section>
+      <!-- Scroll Button -->
+      <button
+        onclick="topFunction()"
+        id="myBtn"
+        title="Go to top"
+        class="hidden fixed bottom-20 right-10 z-50 bg-travel-orange text-white font-bold py-2 px-4 rounded-lg hover:bg-orange-600"
+      >
+        Top
+      </button>
+      <!-- Cookie Banner -->
+      <div
+        id="cookie-banner"
+        class="fixed inset-x-0 z-10 bottom-0 flex flex-col justify-between gap-x-8 gap-y-4 p-4 bg-white border-t border-t-travel-orange md:flex-row md:items-center lg:px-8 opacity-0 transition-opacity duration-500 ease-in-out"
+      >
+        <p class="max-w-4xl text-sm text-black">
+          Discover our curated selection of travel essentials, gear, and
+          accessories—an ensemble designed to enhance your journeys and enrich
+          your experiences on the road. Embrace these offerings at your
+          discretion, knowing they are crafted to elevate your adventures with
+          both practicality and pleasure. See our
+          <a
+            href="/privacy-policy.html"
+            class="font-semibold text-travel-orange"
+            >cookie policy</a
+          >.
+        </p>
+        <div class="flex flex-none items-center gap-x-5">
+          <button
+            id="accept-cookies"
+            type="submit"
+            class="rounded-md bg-travel-orange px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
+          >
+            Accept all
+          </button>
+          <button
+            id="reject-cookies"
+            type="submit"
+            class="px-3 py-2 text-sm font-semibold text-black shadow-lg"
+          >
+            Reject all
+          </button>
+        </div>
+      </div>
     </main>
     <footer class="max-w-7xl mx-auto overflow-hidden px-6 sm:py-24 lg:px-8">
       <nav class="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12">
@@ -473,5 +516,6 @@
         &copy; 2020 TravelUp, Inc. All rights reserved.
       </p>
     </footer>
+    <script src="scripts/scripts.js"></script>
   </body>
 </html>

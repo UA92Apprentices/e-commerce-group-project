@@ -1074,6 +1074,14 @@ select {
   z-index: 10;
 }
 
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
+.col-start-2 {
+  grid-column-start: 2;
+}
+
 .float-start {
   float: inline-start;
 }
@@ -1169,6 +1177,10 @@ select {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
 .box-border {
@@ -1298,6 +1310,14 @@ select {
   height: 100%;
 }
 
+.h-\[40rem\] {
+  height: 40rem;
+}
+
+.max-h-12 {
+  max-height: 3rem;
+}
+
 .w-1 {
   width: 0.25rem;
 }
@@ -1316,6 +1336,10 @@ select {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[80rem\] {
+  width: 80rem;
 }
 
 .max-w-2xl {
@@ -1352,6 +1376,10 @@ select {
 
 .max-w-xl {
   max-width: 36rem;
+}
+
+.max-w-sm {
+  max-width: 24rem;
 }
 
 .flex-auto {
@@ -1720,6 +1748,10 @@ select {
 
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -2703,6 +2735,10 @@ select {
   padding-left: 1.5rem;
 }
 
+.pb-12 {
+  padding-bottom: 3rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -2881,6 +2917,10 @@ select {
 .stacked-fractions {
   --tw-numeric-fraction: stacked-fractions;
   font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction);
+}
+
+.leading-8 {
+  line-height: 2rem;
 }
 
 .text-\[\#336699\]\/\[\.35\] {
@@ -3511,6 +3551,14 @@ select {
 }
 
 @media (min-width: 768px) {
+  .md\:col-start-2 {
+    grid-column-start: 2;
+  }
+
+  .md\:col-start-auto {
+    grid-column-start: auto;
+  }
+
   .md\:-mx-8 {
     margin-left: -2rem;
     margin-right: -2rem;
@@ -3520,12 +3568,25 @@ select {
     max-width: 56rem;
   }
 
+  .md\:max-w-xl {
+    max-width: 36rem;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
   .md\:gap-y-8 {
     row-gap: 2rem;
+  }
+
+  .md\:gap-x-10 {
+    -moz-column-gap: 2.5rem;
+         column-gap: 2.5rem;
   }
 
   .md\:text-4xl {
@@ -3548,8 +3609,25 @@ select {
     grid-column: span 7 / span 7;
   }
 
+  .lg\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+
+  .lg\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .lg\:max-w-none {
+    max-width: none;
+  }
+
   .lg\:grid-cols-12 {
     grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   .lg\:gap-8 {

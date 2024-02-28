@@ -1,0 +1,5 @@
+{
+  "rules": {
+    "id-class-value": "off",
+  },
+}

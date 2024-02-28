@@ -1,7 +1,7 @@
 {
   "rules": {
-    "quotes": ["off"],
-    "comma-dangle": ["off"],
-    "semi": ["off"],
+    "quotes": "off",
+    "comma-dangle": "off",
+    "semi": "off",
   },
 }

@@ -1,5 +1,7 @@
 {
   "rules": {
-    "id-class-value": "off",
+    "quotes": ["error", "single"],
+    "comma-dangle": ["error", "never"],
+    "semi": ["error", "never"],
   },
 }

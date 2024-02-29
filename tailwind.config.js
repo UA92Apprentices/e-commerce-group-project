@@ -3,6 +3,9 @@ module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
     extend: {
+      backgroundImage: {
+        "hero-pattern": "url('/images/team-photo 1.svg')",
+      },
       fontFamily: {
         sans: ["Poppins"],
       },

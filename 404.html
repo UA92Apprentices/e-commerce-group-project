@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/output.css" rel="stylesheet" />
+    <link href="/src/input.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>404 - page not found</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      .heading {
+        font-size: 64px;
+      }
+
+      .subheading {
+        font-size: 32px;
+      }
+
+      .centered {
+        margin: 50px 0;
+      }
+
+      .hero-image {
+        height: 90vh;
+      }
+
+      .back-to-home {
+        text-align: center;
+      }
+
+      .button {
+        padding: 10px 20px;
+        background-color: #f28138;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      .button:hover {
+        background-color: #ea580c;
+      }
+    </style>
+  </head>
+  <body class="font-sans">
+    <header>
+      <nav class="bg-white border-gray-200 dark:bg-gray-900">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <a
+            href="https://flowbite.com/"
+            class="flex items-center space-x-3 rtl:space-x-reverse"
+          >
+            <img
+              src="/assets/logo/travelupnew.svg"
+              alt="TravelUp Logo"
+              width="150px"
+              height="150px"
+            />
+          </a>
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul
+              class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-none md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 space-x-4"
+            >
+              <li class="mr-4 md:mr-0">
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-travel-orange md:bg-transparent md:p-0"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-travel-orange hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:from-travel-orange md:p-0 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-travel-orange hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Shop</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-travel-orange hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-travel-orange hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="content">
+          <div class="centered">
+            <img src="assets/logo/travelupnew.svg" alt="" class="img" />
+          </div>
+          <div class="centered">
+            <h1 class="heading">404</h1>
+          </div>
+          <div class="centered">
+            <h2 class="subheading">Page not found</h2>
+          </div>
+          <div class="back-to-home">
+            <a href="/" class="button">Back to Home</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="max-w-7xl mx-auto overflow-hidden px-6 sm:py-24 lg:px-8">
+      <nav class="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12">
+        <div class="pb-6">
+          <a
+            href="/index.html"
+            class="text-lg font-semibold text-travel-orange hover:text-orange-600"
+            >Home</a
+          >
+        </div>
+        <div class="pb-6">
+          <a
+            href="/about.html"
+            class="text-lg font-semibold text-travel-orange hover:text-orange-600"
+            >About</a
+          >
+        </div>
+        <div class="pb-6">
+          <a
+            href="/shop.html"
+            class="text-lg font-semibold text-travel-orange hover:text-orange-600"
+            >Shop</a
+          >
+        </div>
+        <div class="pb-6">
+          <a
+            href="/blog.html"
+            class="text-lg font-semibold text-travel-orange hover:text-orange-600"
+            >Blog</a
+          >
+        </div>
+        <div class="pb-6">
+          <a
+            href="/contact.html"
+            class="text-lg font-semibold text-travel-orange hover:text-orange-600"
+            >Contact</a
+          >
+        </div>
+      </nav>
+      <div class="mt-10 flex justify-center space-x-10">
+        <a href="https://twitter.com/?lang=en">
+          <span class="sr-only">X</span>
+          <img src="/assets/icons/x.svg" alt="X icon" />
+        </a>
+        <a href="https://en-gb.facebook.com/">
+          <span class="sr-only">Facebook</span>
+          <img src="/assets/icons/facebook.svg" alt="Facebook icon" />
+        </a>
+        <a href="https://uk.linkedin.com/">
+          <span class="sr-only">LinkedIn</span>
+          <img src="/assets/icons/linkedin.svg" alt="LinkedIn icon" />
+        </a>
+        <a href="https://www.pinterest.co.uk/">
+          <span class="sr-only">Pinterest</span>
+          <img src="/assets/icons/pinterest.svg" alt="Pinterest icon" />
+        </a>
+        <a href="https://www.youtube.com/">
+          <span class="sr-only">YouTube</span>
+          <img src="/assets/icons/youtube.svg" alt="Youtube icon" />
+        </a>
+        <a href="https://www.instagram.com/">
+          <span class="sr-only">Instagram</span>
+          <img src="/assets/icons/instagram.svg" alt="Instagram icon" />
+        </a>
+      </div>
+      <p class="mt-10 text-center text-lg text-black">
+        &copy; 2024 TravelUp, Inc. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>

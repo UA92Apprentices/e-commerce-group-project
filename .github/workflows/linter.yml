@@ -47,6 +47,5 @@ jobs:
         env:
           VALIDATE_ALL_CODEBASE: true
           VALIDATE_HTML: true
-          HTMLHINT_CONFIG: '{"id-class-value": false}'
-          HTML_RULES: '{"id-class-value": false}'
+          LINTER_RULES_PATH: /.github/linters/
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

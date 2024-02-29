@@ -7,8 +7,6 @@ on:
   pull_request:
     branches:
       - main
-      -landing-page
-
 jobs:
   build:
     name: Lint Code Base

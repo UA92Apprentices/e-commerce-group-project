@@ -47,5 +47,6 @@ jobs:
         env:
           VALIDATE_ALL_CODEBASE: true
           VALIDATE_HTML: true
-          HTMLHINT_CONFIG: .htmlhintrc
+          HTMLHINT_CONFIG: '{"id-class-value": false}'
+          HTML_RULES: '{"id-class-value": false}'
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

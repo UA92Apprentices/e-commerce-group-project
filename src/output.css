@@ -1390,11 +1390,6 @@ select {
   display: list-item;
 }
 
-.custom-li {
-  display: list-item; /* Ensure list items are displayed as list items */
-  /* Add any additional styles you want to apply to the list items here */
-}
-
 .\!hidden {
   display: none !important;
 }

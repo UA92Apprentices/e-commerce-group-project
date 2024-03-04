@@ -49,6 +49,18 @@
       height: auto; /* Maintain aspect ratio */
       display: block; /* Ensure the logo behaves as a block element */
     }
+
+    /* Style for blog entry */
+    .blog-entry {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    /* Style for blog entry content */
+    .blog-entry-content {
+      flex: 1;
+    }
   </style>
 </head>
 <body class="font-sans">
@@ -106,34 +118,28 @@
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
         <!-- Blog entries -->
         <div class="lg:col-span-2">
-          <!-- Blog entry 1 -->
-          <div class="bg-white rounded-lg shadow-md overflow-hidden">
-            <img src="/w3images/woods.jpg" alt="Nature" class="w-full">
-            <div class="px-6 py-4">
-              <div class="font-bold text-xl mb-2">TITLE HEADING</div>
-              <p class="text-sm text-gray-600">Title description, <span class="opacity-50">April 7, 2014</span></p>
-              <p class="mt-4 text-gray-800">Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-            </div>
-            <div class="px-6 pb-4">
-              <div class="flex justify-between items-center">
-            </div>
-          </div>
-          <hr class="my-8">
-         </div> 
           
-          <!-- Blog entry 2 -->
-          <div class="bg-white rounded-lg shadow-md overflow-hidden">
-            <img src="/w3images/bridge.jpg" alt="Norway" class="w-full">
-            <div class="px-6 py-4">
-              <div class="font-bold text-xl mb-2">BLOG ENTRY</div>
-              <p class="text-sm text-gray-600">Title description, <span class="opacity-50">April 2, 2014</span></p>
-              <p class="mt-4 text-gray-800">Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-            </div>
-            <div class="px-6 pb-4">
-              <div class="flex justify-between items-center">
-            </div>
+        <!-- Blog entry 1 -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden blog-entry">
+          <img src="assets/images/carolin-thiergart-p1DPZA4lJuc-unsplash.jpg" alt="Accessories" style="width: 400px;">
+          <div class="blog-entry-content px-6 py-4">
+            <div class="font-bold text-xl mb-2">TITLE HEADING</div>
+            <p class="text-sm text-gray-600">Title description, <span class="opacity-50">April 7, 2014</span></p>
+            <p class="mt-4 text-gray-800">Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
           </div>
-          <hr class="my-8">
+        </div>
+
+        <div style="margin-bottom: 20px;"></div>
+
+
+        <!-- Blog entry 2 -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden blog-entry">
+          <img src="assets/images/laura-chouette-g2rFQcMADOU-unsplash.jpg" alt="Accessories" style="width: 400px;">
+          <div class="blog-entry-content px-6 py-4">
+            <div class="font-bold text-xl mb-2">TITLE HEADING</div>
+            <p class="text-sm text-gray-600">Title description, <span class="opacity-50">April 7, 2014</span></p>
+            <p class="mt-4 text-gray-800">Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+          </div>
         </div>
       
          <!-- Posts -->

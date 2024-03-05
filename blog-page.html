@@ -61,6 +61,43 @@
     .blog-entry-content {
       flex: 1;
     }
+
+    /* Style for popular posts section */
+    .popular-posts {
+      position: sticky;
+      top: 20px; /* Adjust as needed */
+      width: 300px; /* Adjust width as needed */
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .popular-posts h4 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .popular-posts ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .popular-posts li {
+      margin-bottom: 1rem;
+    }
+
+    .popular-posts img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 1rem;
+    }
+
+    .popular-posts .text-lg {
+      font-size: 1.2rem;
+    }
   </style>
 </head>
 <body class="font-sans">
@@ -111,14 +148,11 @@
     />
     <p class="hero-text">TravelUp Blog</p>
   </header>
-  <footer class="max-w-7xl mx-auto overflow-hidden px-6 sm:py-24 lg:px-8">
-    <nav class="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12">
-      <div class="pb-6">
-      </div>
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        <!-- Blog entries -->
-        <div class="lg:col-span-2">
-          
+
+  <main class="max-w-7xl mx-auto px-6 sm:py-24 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <!-- Blog entries -->
+      <div>
         <!-- Blog entry 1 -->
         <div class="bg-white rounded-lg shadow-md overflow-hidden blog-entry">
           <img src="assets/images/carolin-thiergart-p1DPZA4lJuc-unsplash.jpg" alt="Accessories" style="width: 400px;">
@@ -131,12 +165,11 @@
 
         <div style="margin-bottom: 20px;"></div>
 
-
         <!-- Blog entry 2 -->
         <div class="bg-white rounded-lg shadow-md overflow-hidden blog-entry">
           <img src="assets/images/laura-chouette-g2rFQcMADOU-unsplash.jpg" alt="Beauty" style="width: 400px;">
           <div class="blog-entry-content px-6 py-4">
-            <div class="font-bold text-xl mb-2">kincare Tips for Jet-Setters: How to Keep Your Skin Glowing While Traveling</div>
+            <div class="font-bold text-xl mb-2">Skincare Tips for Jet-Setters: How to Keep Your Skin Glowing While Traveling</div>
             <p class="text-sm text-gray-600">01/11/2023 <span class="opacity-50"></span></p>
             <p class="mt-4 text-gray-800">Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
           </div>
@@ -153,78 +186,78 @@
             <p class="mt-4 text-gray-800">Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
           </div>
         </div>
-
-        <div style="margin-bottom: 20px;"></div>
-      
-         <!-- Posts -->
-          <div class="bg-white rounded-lg shadow-md overflow-hidden">
-            <div class="px-6 py-4">
-              <h4 class="text-xl font-semibold mb-4">Popular Posts</h4>
-              <ul>
-                <li class="flex items-center py-2">
-                  <img src="/w3images/workshop.jpg" alt="Workshop" class="w-12 h-12 mr-4">
-                  <div>
-                    <span class="text-lg font-semibold">Lorem</span><br>
-                    <span>Sed mattis nunc</span>
-                  </div>
-                </li>
-                <li class="flex items-center py-2">
-                  <img src="/w3images/gondol.jpg" alt="Gondol" class="w-12 h-12 mr-4">
-                  <div>
-                    <span class="text-lg font-semibold">Ipsum</span><br>
-                    <span>Praes tincid sed</span>
-                  </div>
-                </li>
-                <li class="flex items-center py-2">
-                  <img src="/w3images/skies.jpg" alt="Skies" class="w-12 h-12 mr-4">
-                  <div>
-                    <span class="text-lg font-semibold">Dorum</span><br>
-                    <span>Ultricies congue</span>
-                  </div>
-                </li>
-                <li class="flex items-center py-2 md:block">
-                  <img src="/w3images/rock.jpg" alt="Rock" class="w-12 h-12 mr-4">
-                  <div>
-                    <span class="text-lg font-semibold">Mingsum</span><br>
-                    <span>Lorem ipsum dipsum</span>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
       </div>
-    </nav>
-    <div class="mt-10 flex justify-center space-x-10">
-      <a href="https://twitter.com/?lang=en">
-        <span class="sr-only">X</span>
-        <img src="/assets/icons/x.svg" alt="X icon" />
-      </a>
-      <a href="https://en-gb.facebook.com/">
-        <span class="sr-only">Facebook</span>
-        <img src="/assets/icons/facebook.svg" alt="Facebook icon" />
-      </a>
-      <a href="https://uk.linkedin.com/">
-        <span class="sr-only">LinkedIn</span>
-        <img src="/assets/icons/linkedin.svg" alt="LinkedIn icon" />
-      </a>
-      <a href="https://www.pinterest.co.uk/">
-        <span class="sr-only">Pinterest</span>
-        <img src="/assets/icons/pinterest.svg" alt="Pinterest icon" />
-      </a>
-      <a href="https://www.youtube.com/">
-        <span class="sr-only">YouTube</span>
-        <img src="/assets/icons/youtube.svg" alt="Youtube icon" />
-      </a>
-      <a href="https://www.instagram.com/">
-        <span class="sr-only">Instagram</span>
-        <img src="/assets/icons/instagram.svg" alt="Instagram icon" />
-      </a>
+
+      <!-- Popular Posts section -->
+      <aside class="popular-posts">
+        <h4 class="text-xl font-semibold mb-4">Popular Posts</h4>
+        <ul>
+          <li class="flex items-center py-2">
+            <img src="" alt="Workshop" class="w-12 h-12 mr-4">
+            <div>
+              <span class="text-lg font-semibold">Lorem</span><br>
+              <span>Sed mattis nunc</span>
+            </div>
+          </li>
+          <li class="flex items-center py-2">
+            <img src="" alt="Gondol" class="w-12 h-12 mr-4">
+            <div>
+              <span class="text-lg font-semibold">Ipsum</span><br>
+              <span>Praes tincid sed</span>
+            </div>
+          </li>
+          <li class="flex items-center py-2">
+            <img src="" alt="Skies" class="w-12 h-12 mr-4">
+            <div>
+              <span class="text-lg font-semibold">Dorum</span><br>
+              <span>Ultricies congue</span>
+            </div>
+          </li>
+          <li class="flex items-center py-2 md:block">
+            <img src="" alt="Rock" class="w-12 h-12 mr-4">
+            <div>
+              <span class="text-lg font-semibold">Mingsum</span><br>
+              <span>Lorem ipsum dipsum</span>
+            </div>
+          </li>
+        </ul>
+      </aside>
     </div>
-    <p class="mt-10 text-center text-lg text-black">
-      &copy; 2024 TravelUp, Inc. All rights reserved.
-    </p>
+  </main>
+
+  <footer class="max-w-7xl mx-auto overflow-hidden px-6 sm:py-24 lg:px-8">
+    <!-- Footer content goes here -->
   </footer>
+
+  <div class="mt-10 flex justify-center space-x-10">
+    <a href="https://twitter.com/?lang=en">
+      <span class="sr-only">X</span>
+      <img src="/assets/icons/x.svg" alt="X icon" />
+    </a>
+    <a href="https://en-gb.facebook.com/">
+      <span class="sr-only">Facebook</span>
+      <img src="/assets/icons/facebook.svg" alt="Facebook icon" />
+    </a>
+    <a href="https://uk.linkedin.com/">
+      <span class="sr-only">LinkedIn</span>
+      <img src="/assets/icons/linkedin.svg" alt="LinkedIn icon" />
+    </a>
+    <a href="https://www.pinterest.co.uk/">
+      <span class="sr-only">Pinterest</span>
+      <img src="/assets/icons/pinterest.svg" alt="Pinterest icon" />
+    </a>
+    <a href="https://www.youtube.com/">
+      <span class="sr-only">YouTube</span>
+      <img src="/assets/icons/youtube.svg" alt="Youtube icon" />
+    </a>
+    <a href="https://www.instagram.com/">
+      <span class="sr-only">Instagram</span>
+      <img src="/assets/icons/instagram.svg" alt="Instagram icon" />
+    </a>
+  </div>
+  <p class="mt-10 text-center text-lg text-black">
+    &copy; 2024 TravelUp, Inc. All rights reserved.
+  </p>
   <script src="scripts/scripts.js"></script>
 </body>
 </html>

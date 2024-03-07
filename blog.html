@@ -170,7 +170,6 @@
           <p class="mt-4 text-gray-800">Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
           <div class="flex justify-center mt-10">
             <button class="py-4 px-8 bg-white border border-black rounded-lg hover:bg-gray-200 text-travel-orange"><b>READ MORE »</b></button>
-            <hr style="height: 4px; background-color: orange; border: none;">
           </div> 
         </div>
       </div>
@@ -215,75 +214,119 @@
         </li>
       </ul>
     </aside>
+  </div>
+     <!-- Scroll Button -->
+     <button
+     onclick="topFunction()"
+     id="my-btn"
+     title="Go to top"
+     class="hidden fixed bottom-20 right-10 z-50 bg-travel-orange text-white font-bold py-2 px-4 rounded-lg hover:bg-orange-600"
+   >
+     Top
+   </button>
+   <!-- Cookie Banner -->
+   <div
+     id="cookie-banner"
+     class="fixed inset-x-0 z-10 bottom-0 flex flex-col justify-between gap-x-8 gap-y-4 p-4 bg-white border-t border-t-travel-orange md:flex-row md:items-center lg:px-8 opacity-0 transition-opacity duration-500 ease-in-out"
+   >
+     <p class="max-w-4xl text-sm text-black">
+       Discover our curated selection of travel essentials, gear, and
+       accessories—an ensemble designed to enhance your journeys and enrich
+       your experiences on the road. Embrace these offerings at your
+       discretion, knowing they are crafted to elevate your adventures with
+       both practicality and pleasure. See our
+       <a
+         href="/privacy-policy.html"
+         class="font-semibold text-travel-orange"
+         >cookie policy</a
+       >.
+     </p>
+     <div class="flex flex-none items-center gap-x-5">
+       <button
+         id="accept-cookies"
+         type="submit"
+         class="rounded-md bg-travel-orange px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
+       >
+         Accept all
+       </button>
+       <button
+         id="reject-cookies"
+         type="submit"
+         class="px-3 py-2 text-sm font-semibold text-black shadow-lg"
+       >
+         Reject all
+       </button>
+     </div>
    </div>
-    <footer class="max-w-7xl mx-auto overflow-hidden px-6 sm:py-24 lg:px-8">
-    <nav class="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12">
-      <div class="pb-6">
-        <a
-          href="/index.html"
-          class="text-lg font-semibold text-travel-orange hover:text-orange-600"
-          >Home</a
-        >
-      </div>
-      <div class="pb-6">
-        <a
-          href="/about.html"
-          class="text-lg font-semibold text-travel-orange hover:text-orange-600"
-          >About</a
-        >
-      </div>
-      <div class="pb-6">
-        <a
-          href="/shop.html"
-          class="text-lg font-semibold text-travel-orange hover:text-orange-600"
-          >Shop</a
-        >
-      </div>
-      <div class="pb-6">
-        <a
-          href="/blog.html"
-          class="text-lg font-semibold text-travel-orange hover:text-orange-600"
-          >Blog</a
-        >
-      </div>
-      <div class="pb-6">
-        <a
-          href="/contact.html"
-          class="text-lg font-semibold text-travel-orange hover:text-orange-600"
-          >Contact</a
-        >
-      </div>
-    </nav>
-    <div class="mt-10 flex justify-center space-x-10">
-      <a href="https://twitter.com/?lang=en">
-        <span class="sr-only">X</span>
-        <img src="/assets/icons/x.svg" alt="X icon" />
-      </a>
-      <a href="https://en-gb.facebook.com/">
-        <span class="sr-only">Facebook</span>
-        <img src="/assets/icons/facebook.svg" alt="Facebook icon" />
-      </a>
-      <a href="https://uk.linkedin.com/">
-        <span class="sr-only">LinkedIn</span>
-        <img src="/assets/icons/linkedin.svg" alt="LinkedIn icon" />
-      </a>
-      <a href="https://www.pinterest.co.uk/">
-        <span class="sr-only">Pinterest</span>
-        <img src="/assets/icons/pinterest.svg" alt="Pinterest icon" />
-      </a>
-      <a href="https://www.youtube.com/">
-        <span class="sr-only">YouTube</span>
-        <img src="/assets/icons/youtube.svg" alt="Youtube icon" />
-      </a>
-      <a href="https://www.instagram.com/">
-        <span class="sr-only">Instagram</span>
-        <img src="/assets/icons/instagram.svg" alt="Instagram icon" />
-      </a>
-    </div>
-    <p class="mt-10 text-center text-lg text-black">
-      &copy; 2024 TravelUp, Inc. All rights reserved.
-    </p>
-  </footer>
-  <script src="scripts/scripts.js"></script>
+ </main>
+ <footer class="max-w-7xl mx-auto overflow-hidden px-6 sm:py-24 lg:px-8">
+   <nav class="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12">
+     <div class="pb-6">
+       <a
+         href="/index.html"
+         class="text-lg font-semibold text-travel-orange hover:text-orange-600"
+         >Home</a
+       >
+     </div>
+     <div class="pb-6">
+       <a
+         href="/about.html"
+         class="text-lg font-semibold text-travel-orange hover:text-orange-600"
+         >About</a
+       >
+     </div>
+     <div class="pb-6">
+       <a
+         href="/shop.html"
+         class="text-lg font-semibold text-travel-orange hover:text-orange-600"
+         >Shop</a
+       >
+     </div>
+     <div class="pb-6">
+       <a
+         href="/blog.html"
+         class="text-lg font-semibold text-travel-orange hover:text-orange-600"
+         >Blog</a
+       >
+     </div>
+     <div class="pb-6">
+       <a
+         href="/contact.html"
+         class="text-lg font-semibold text-travel-orange hover:text-orange-600"
+         >Contact</a
+       >
+     </div>
+   </nav>
+   <div class="mt-10 flex justify-center space-x-10">
+     <a href="https://twitter.com/?lang=en">
+       <span class="sr-only">X</span>
+       <img src="/assets/icons/x.svg" alt="X icon" />
+     </a>
+     <a href="https://en-gb.facebook.com/">
+       <span class="sr-only">Facebook</span>
+       <img src="/assets/icons/facebook.svg" alt="Facebook icon" />
+     </a>
+     <a href="https://uk.linkedin.com/">
+       <span class="sr-only">LinkedIn</span>
+       <img src="/assets/icons/linkedin.svg" alt="LinkedIn icon" />
+     </a>
+     <a href="https://www.pinterest.co.uk/">
+       <span class="sr-only">Pinterest</span>
+       <img src="/assets/icons/pinterest.svg" alt="Pinterest icon" />
+     </a>
+     <a href="https://www.youtube.com/">
+       <span class="sr-only">YouTube</span>
+       <img src="/assets/icons/youtube.svg" alt="Youtube icon" />
+     </a>
+     <a href="https://www.instagram.com/">
+       <span class="sr-only">Instagram</span>
+       <img src="/assets/icons/instagram.svg" alt="Instagram icon" />
+     </a>
+   </div>
+   <p class="mt-10 text-center text-lg text-black">
+     &copy; 2024 TravelUp, Inc. All rights reserved.
+   </p>
+ </footer>
+ <script src="scripts/scripts.js"></script>
 </body>
 </html>

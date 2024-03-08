@@ -23,34 +23,34 @@
               alt="TravelUp logo"
               width="169"
               height="100"
-              class="py-2"
+              class="py-2 mr-5"
             />
           </a>
         </div>
         <div class="flex space-x-5">
           <a
             href="/index.html"
-            class="text-travel-orange text-lg font-semibold hover:text-orange-600"
+            class="text-travel-orange text-base font-semibold hover:text-orange-600 md:text-lg xl:text-xl"
             >Home</a
           >
           <a
             href="/about.html"
-            class="text-travel-orange text-lg font-semibold hover:text-orange-600"
+            class="text-travel-orange text-base font-semibold hover:text-orange-600 md:text-lg xl:text-xl"
             >About</a
           >
           <a
             href="/shop.html"
-            class="text-travel-orange text-lg font-semibold hover:text-orange-600"
+            class="text-travel-orange text-base font-semibold hover:text-orange-600 md:text-lg xl:text-xl"
             >Shop</a
           >
           <a
             href="/blog.html"
-            class="text-travel-orange text-lg font-semibold hover:text-orange-600"
+            class="text-travel-orange text-base font-semibold hover:text-orange-600 md:text-lg xl:text-xl"
             >Blog</a
           >
           <a
             href="/contact.html"
-            class="text-travel-orange text-lg font-semibold hover:text-orange-600"
+            class="text-travel-orange text-base font-semibold hover:text-orange-600 md:text-lg xl:text-xl"
             >Contact</a
           >
         </div>
@@ -62,7 +62,7 @@
           class="w-full h-96 object-cover"
         />
         <p
-          class="max-w-xl mx-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-3xl text-white text-center px-4 py-2 rounded-lg z-10"
+          class="max-w-xl mx-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-xl text-white text-center px-4 py-2 rounded-lg z-10 md:text-3xl xl:text-4xl"
         >
           Shop our travel item trends throughout all of our product range
         </p>
@@ -139,32 +139,12 @@
           </a>
         </div>
       </section>
-      <section class="relative">
+      <section>
         <img
-          src="/assets/images/ross-parmly-rf6ywHVkrlY-unsplash 1.svg"
+          src="/assets/images/sale-banner.svg"
           alt="Plane in the sky"
           class="w-full h-auto object-cover"
         />
-        <div
-          class="absolute inset-0 flex flex-col justify-center items-center bg-opacity-50 space-y-8"
-        >
-          <div class="max-w-5xl space-y-5 text-center">
-            <h2 class="text-5xl font-semibold">
-              Get 25% off during our one-time sale
-            </h2>
-            <p class="max-w-xl mx-auto font-semibold text-xl">
-              Most of our products are limited releases that won't come back.
-              Get your favorite items while they're in stock
-            </p>
-          </div>
-          <div class="mt-4">
-            <button
-              class="px-4 py-2 bg-travel-orange text-white font-semibold rounded-lg hover:bg-orange-600"
-            >
-              Get access to our one-time sale
-            </button>
-          </div>
-        </div>
       </section>
       <section class="max-w-7xl mx-auto px-4 py-16 space-y-12">
         <div id="travel-tech">
@@ -477,7 +457,7 @@
           </div>
         </div>
       </section>
-      <section class="mt-16 px-12 py-12">
+      <section class="px-12 pb-12 md:pb-0">
         <div
           class="max-w-7xl mx-auto grid grid-cols-1 gap-10 border border-travel-orange py-12 px-12 shadow-2xl rounded-lg lg:grid-cols-12"
         >
@@ -486,7 +466,9 @@
             <p class="inline">Sign up for our newsletter.</p>
           </div>
           <form class="max-w-md w-full self-center lg:col-span-5">
-            <div class="flex gap-x-4">
+            <div
+              class="flex flex-col gap-y-4 md:flex-row md:gap-y-0 md:gap-x-4"
+            >
               <label for="email-address" class="sr-only">Email address</label>
               <input
                 id="email-address"
@@ -494,12 +476,13 @@
                 type="email"
                 autocomplete="email"
                 required
-                class="flex-auto rounded-md px-3 py-2 text-black shadow-sm ring-1 ring-inset ring-travel-orange border-travel-orange focus:ring-2 focus:ring-inset focus:ring-travel-orange md:text-sm"
+                class="flex-auto rounded-md px-3 py-2 text-black shadow-sm ring-1 ring-inset ring-travel-orange focus:ring-2 focus:ring-inset focus:ring-travel-orange md:text-sm border-travel-orange"
                 placeholder="Enter your email"
               />
+              <!-- TODO: Going forward we can have this redirect to a success page or even have a modal to confirm it has been successful. -->
               <button
                 type="submit"
-                class="flex-none rounded-md bg-travel-orange px-3.5 py-2.5 text-white text-sm font-semibold shadow-sm hover:bg-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-travel-orange"
+                class="flex-none rounded-md bg-travel-orange px-3.5 py-2.5 text-white text-sm font-semibold shadow-sm hover:bg-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-500"
               >
                 Subscribe
               </button>
@@ -525,41 +508,75 @@
       >
         Top
       </button>
+      <!-- Cookie Banner -->
+      <div
+        id="cookie-banner"
+        class="fixed inset-x-0 z-10 bottom-0 flex flex-col justify-between gap-x-8 gap-y-4 p-4 bg-white border-t border-t-travel-orange md:flex-row md:items-center lg:px-8 opacity-0 transition-opacity duration-500 ease-in-out"
+      >
+        <p class="max-w-4xl text-sm text-black">
+          Discover our curated selection of travel essentials, gear, and
+          accessories—an ensemble designed to enhance your journeys and enrich
+          your experiences on the road. Embrace these offerings at your
+          discretion, knowing they are crafted to elevate your adventures with
+          both practicality and pleasure. See our
+          <a
+            href="/privacy-policy.html"
+            class="font-semibold text-travel-orange"
+            >cookie policy</a
+          >.
+        </p>
+        <div class="flex flex-none items-center gap-x-5">
+          <button
+            id="accept-cookies"
+            type="submit"
+            class="rounded-md bg-travel-orange px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
+          >
+            Accept all
+          </button>
+          <button
+            id="reject-cookies"
+            type="submit"
+            class="px-3 py-2 text-sm font-semibold text-black shadow-lg"
+          >
+            Reject all
+          </button>
+        </div>
+      </div>
     </main>
     <footer class="max-w-7xl mx-auto overflow-hidden px-6 sm:py-24 lg:px-8">
       <nav class="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12">
         <div class="pb-6">
           <a
             href="/index.html"
-            class="text-lg font-semibold text-travel-orange hover:text-orange-600"
+            class="text-travel-orange text-base font-semibold hover:text-orange-600 md:text-lg xl:text-xl"
             >Home</a
           >
         </div>
         <div class="pb-6">
           <a
             href="/about.html"
-            class="text-lg font-semibold text-travel-orange hover:text-orange-600"
+            class="text-travel-orange text-base font-semibold hover:text-orange-600 md:text-lg xl:text-xl"
             >About</a
           >
         </div>
         <div class="pb-6">
           <a
             href="/shop.html"
-            class="text-lg font-semibold text-travel-orange hover:text-orange-600"
+            class="text-travel-orange text-base font-semibold hover:text-orange-600 md:text-lg xl:text-xl"
             >Shop</a
           >
         </div>
         <div class="pb-6">
           <a
             href="/blog.html"
-            class="text-lg font-semibold text-travel-orange hover:text-orange-600"
+            class="text-travel-orange text-base font-semibold hover:text-orange-600 md:text-lg xl:text-xl"
             >Blog</a
           >
         </div>
         <div class="pb-6">
           <a
             href="/contact.html"
-            class="text-lg font-semibold text-travel-orange hover:text-orange-600"
+            class="text-travel-orange text-base font-semibold hover:text-orange-600 md:text-lg xl:text-xl"
             >Contact</a
           >
         </div>

@@ -65,13 +65,13 @@
     </header>
     <main>
       <section
-        class="max-w-screen-2xl mx-auto grid grid-cols-2 py-20 px-16 space-x-28"
+        class="max-w-screen-2xl mx-auto md:grid md:grid-cols-2 py-20 px-16 space-x-28"
       >
         <div class="relative space-y-8 md:space-y-12 xl:space-y-16">
           <img
             src="/assets/images/gradient.svg"
             alt=""
-            class="absolute w-full h-auto ml-80 mt-40"
+            class="absolute w-full h-auto ml-20 mt-10 xl:ml-80 xl:mt-40"
           />
           <h1
             class="text-travel-orange font-bold text-2xl leading-tight mb-4 md:text-3xl xl:text-4xl"
@@ -94,7 +94,7 @@
           <img
             src="assets/images/tiago-rosado-cMG5qjpnsyg-unsplash.jpg"
             alt="Introduction image"
-            class="w-[476px] h-[427px] object-cover rounded-lg"
+            class="hidden md:block w-[476px] h-[427px] object-cover rounded-lg"
           />
         </div>
       </section>
@@ -103,13 +103,13 @@
       >
         <div class="first-column">
           <h2
-            class="mb-4 text-travel-orange font-bold text-2xl md:text-3xl xl:text-4xl"
+            class="mt-12 mb-4 text-travel-orange font-bold text-2xl md:mt-0 md:text-3xl xl:text-4xl"
           >
             Our Mission
           </h2>
           <div class="container gap-6">
             <div class="first-paragraph">
-              <p class="max-w-3xl mb-4 text-base md:text-lg xl:text-xl">
+              <p class="max-w-5xl mb-4 text-xs md:text-lg xl:text-xl">
                 <span class="text-travel-orange font-bold">
                   Be World-Class -
                 </span>
@@ -119,7 +119,7 @@
               </p>
             </div>
             <div class="second-paragraph">
-              <p class="max-w-3xl mb-4 text-base md:text-lg xl:text-xl">
+              <p class="max-w-3xl mb-4 text-xs md:text-lg xl:text-xl">
                 <span class="text-travel-orange font-bold">
                   Share Everything You Know-</span
                 >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -128,7 +128,7 @@
               </p>
             </div>
             <div class="Third-paragraph">
-              <p class="max-w-3xl mb-4 text-base md:text-lg xl:text-xl">
+              <p class="max-w-3xl mb-4 text-xs md:text-lg xl:text-xl">
                 <span class="text-travel-orange font-bold">
                   Always Learning -
                 </span>
@@ -140,8 +140,8 @@
           </div>
         </div>
         <div class="second-column">
-          <div class="Fourth-paragraph mt-12 mb-2">
-            <p class="max-w-3xl mb-4 text-base md:text-lg xl:text-xl">
+          <div class="Fourth-paragraph mt-24 mb-2 md:mt-12">
+            <p class="max-w-3xl mb-4 text-xs md:mt-12 md:text-lg xl:text-xl">
               <span class="text-travel-orange font-bold">
                 Be Supportive -
               </span>
@@ -151,7 +151,7 @@
             </p>
           </div>
           <div class="Fifth-paragraph mb-2" style="margin-top: 0px">
-            <p class="max-w-3xl mb-4 text-base md:text-lg xl:text-xl">
+            <p class="max-w-3xl mb-4 text-xs md:text-lg xl:text-xl">
               <span class="text-travel-orange font-bold">
                 Take Responsibility -
               </span>
@@ -161,7 +161,7 @@
             </p>
           </div>
           <div class="Sixth-paragraph mb-2" style="margin-top: 0px">
-            <p class="max-w-3xl mb-4 text-base md:text-lg xl:text-xl">
+            <p class="max-w-3xl mb-4 text-xs md:text-lg xl:text-xl">
               <span class="text-travel-orange font-bold">
                 Enjoy Downtime -
               </span>
@@ -187,7 +187,7 @@
             >
               <div class="p-6 space-y-2">
                 <img
-                  class="w-24 h-24 mb-3 rounded-full shadow-lg mx-auto"
+                  class="w-24 h-24 mb-3 rounded-full mx-auto"
                   src="assets/images/hayden.svg"
                   alt="Hayden Buckley-Smith"
                 />
@@ -219,7 +219,7 @@
             >
               <div class="p-6 space-y-2">
                 <img
-                  class="w-24 h-24 mb-3 rounded-full shadow-lg mx-auto"
+                  class="w-24 h-24 mb-3 rounded-full mx-auto"
                   src="assets/images/thasbia.svg"
                   alt="Thasbia Sultana"
                 />
@@ -251,7 +251,7 @@
             >
               <div class="p-6 space-y-2">
                 <img
-                  class="w-24 h-24 mb-3 rounded-full shadow-lg mx-auto"
+                  class="w-24 h-24 mb-3 rounded-full mx-auto"
                   src="assets/images/nathan.svg"
                   alt="Nathan Halter"
                 />
@@ -285,7 +285,7 @@
             >
               <div class="p-6 space-y-2">
                 <img
-                  class="w-24 h-24 mb-3 rounded-full shadow-lg mx-auto"
+                  class="w-24 h-24 mb-3 rounded-full mx-auto"
                   src="assets/images/cara.svg"
                   alt="Cara Swift"
                 />
@@ -317,7 +317,7 @@
             >
               <div class="p-6 space-y-2">
                 <img
-                  class="w-24 h-24 mb-3 rounded-full shadow-lg mx-auto"
+                  class="w-24 h-24 mb-3 rounded-full mx-auto"
                   src="assets/images/devina.svg"
                   alt="Devina Moore"
                 />
@@ -355,6 +355,40 @@
       >
         Top
       </button>
+      <!-- Cookie Banner -->
+      <div
+        id="cookie-banner"
+        class="fixed inset-x-0 z-10 bottom-0 flex flex-col justify-between gap-x-8 gap-y-4 p-4 bg-white border-t border-t-travel-orange md:flex-row md:items-center lg:px-8 opacity-0 transition-opacity duration-500 ease-in-out"
+      >
+        <p class="max-w-4xl text-sm text-black">
+          Discover our curated selection of travel essentials, gear, and
+          accessories—an ensemble designed to enhance your journeys and enrich
+          your experiences on the road. Embrace these offerings at your
+          discretion, knowing they are crafted to elevate your adventures with
+          both practicality and pleasure. See our
+          <a
+            href="/privacy-policy.html"
+            class="font-semibold text-travel-orange"
+            >cookie policy</a
+          >.
+        </p>
+        <div class="flex flex-none items-center gap-x-5">
+          <button
+            id="accept-cookies"
+            type="submit"
+            class="rounded-md bg-travel-orange px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
+          >
+            Accept all
+          </button>
+          <button
+            id="reject-cookies"
+            type="submit"
+            class="px-3 py-2 text-sm font-semibold text-black shadow-lg"
+          >
+            Reject all
+          </button>
+        </div>
+      </div>
     </main>
     <footer class="max-w-7xl mx-auto overflow-hidden px-6 sm:py-24 lg:px-8">
       <nav class="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12">

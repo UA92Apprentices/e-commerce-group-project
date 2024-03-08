@@ -16,7 +16,7 @@ function topFunction() {
     // Use native smooth scrolling
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
+      behavior: "smooth"
     });
   } else {
     // Scroll to the top for browsers that do not support smooth scrolling
@@ -28,3 +28,28 @@ function topFunction() {
 window.onscroll = function () {
   handleScroll();
 };
+
+// Cookie Banner
+
+document.addEventListener("DOMContentLoaded", function () {
+  var cookieBanner = document.getElementById("cookie-banner");
+  var acceptCookiesButton = document.getElementById("accept-cookies");
+  var rejectCookiesButton = document.getElementById("reject-cookies");
+
+  function hideCookieBanner() {
+    // Add a class to make the banner invisible
+    cookieBanner.classList.add("opacity-0");
+    // After the transition duration, remove the banner from the DOM
+    setTimeout(function () {
+      cookieBanner.style.display = "none";
+    }, 500); // 500 is the duration of the opacity transition
+  }
+
+  acceptCookiesButton.addEventListener("click", hideCookieBanner);
+  rejectCookiesButton.addEventListener("click", hideCookieBanner);
+
+  setTimeout(function () {
+    // Add a class to make the banner visible after 5 seconds
+    cookieBanner.classList.add("opacity-100");
+  }, 5000);
+});

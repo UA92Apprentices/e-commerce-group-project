@@ -1,5 +1,5 @@
 function handleScroll() {
-  var mybutton = document.getElementById("myBtn");
+  var mybutton = document.getElementById("my-btn");
 
   // Show the button when scrolling down, hide when scrolling up
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -16,7 +16,7 @@ function topFunction() {
     // Use native smooth scrolling
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
+      behavior: "smooth"
     });
   } else {
     // Scroll to the top for browsers that do not support smooth scrolling

@@ -11,7 +11,251 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <title>TravelUp - Shop</title>
-  </head>
-<body></body>
+    <title>Contact Form</title>
+    <style>
+  /* CSS styles here */
+
+        /*Add margin space before "first name" */
+        label {
+          margin-top: 150px;
+          display: block;
+          text-align: center; /*centre align the labels */
+
+        }
+
+        /* Center align the container */
+        .container {
+          border-radius: 5px;
+          background-color: #FFFFFF;
+          padding: 20px;
+          margin: 0 auto;
+          max-width: 400px;
+
+        }
+
+        /* style the checkbox label */
+        .checkbox-label {
+          display: inline-block;
+          margin-top: 10px;
+          text-align: left; /* align to left 
+
+        }
+
+        /*style the check box */
+
+        .checkbox-input {
+          margin-right: 5px;
+
+        }
+
+        /* submit button*/
+        input[type=submit] {
+          display: block;
+          margin: 20px auto; /*submit to centre button*/
+
+        }
+
+    
+        
+
+        /* Style inputs with type="text", select elements and textareas */
+        input[type=text], select, textarea {
+            width: 100%; /* Full width */
+            padding: 12px; /* Some padding */ 
+            border: 1px solid #ccc; /* Gray border */
+            border-radius: 4px; /* Rounded borders */
+            box-sizing: border-box; /* Make sure that padding and width stays in place */
+            margin-top: 10px; /* Add a top margin */
+            margin-bottom: 20px; /* Bottom margin */
+            margin-left: auto; /* left margin */
+            margin-right: auto; /* right margin */
+            resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+        }
+
+        /* Style the submit button with a specific background color etc */
+        input[type=submit] {
+            background-color: #F28138;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        /* When moving the mouse over the submit button, add a orange colour*/
+        input[type=submit]:hover {
+            background-color: #F28138;
+        }
+
+        /* Add a background color and some padding around the form */
+        .container {
+            border-radius: 5px;
+            background-color: #FFFFFF;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+  <header>
+    <nav class="flex items-center justify-between py-2 px-4">
+      <div>
+        <a href="/index.html">
+          <img
+            src="/assets/logo/travelupnew.svg"
+            alt="TravelUp logo"
+            width="169"
+            height="100"
+            class="py-2"
+          />
+        </a>
+      </div>
+      <div class="flex space-x-5">
+        <a
+          href="/index.html"
+          class="text-travel-orange text-lg font-semibold hover:text-orange-600"
+          >Home</a
+        >
+        <a
+          href="/about.html"
+          class="text-travel-orange text-lg font-semibold hover:text-orange-600"
+          >About</a
+        >
+        <a
+          href="/shop.html"
+          class="text-travel-orange text-lg font-semibold hover:text-orange-600"
+          >Shop</a
+        >
+        <a
+          href="/blog.html"
+          class="text-travel-orange text-lg font-semibold hover:text-orange-600"
+          >Blog</a
+        >
+        <a
+          href="/contact.html"
+          class="text-travel-orange text-lg font-semibold hover:text-orange-600"
+          >Contact</a
+        >
+      </div>
+    </nav>
+    <div class="relative">
+      <img
+        src="/assets/images/saksham-gangwar-gPnovpRp0S8-unsplash.jpg"
+        alt="Hero image"
+        class="w-full h-96 object-cover"
+      />
+      <p
+        class="max-w-xl mx-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-3xl text-white text-center px-4 py-2 rounded-lg z-10"
+      >
+        Shop our travel item trends throughout all of our product range
+      </p>
+      <div class="absolute bottom-16 w-full text-center">
+        <a href="/shop.html">
+          <button
+            class="px-4 py-2 text-white text-base font-medium rounded-lg bg-travel-orange hover:bg-orange-600"
+          >
+            Product Range
+          </button>
+        </a>
+      </div>
+    </div>
+  </header>
+  
+    <div class="container">
+        <form action="action_page.php">
+
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Enter your first name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Enter your last name..">
+
+            <label for="Email">Email</label>
+            <input type="text" id="Email" placeholder="Enter your email address..">
+
+            <label for="More">More information</label>
+            <textarea id="More" name="More information" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+            <!-- tick box with text -->
+            <label for= "moreinformation">Tick here to recieve emails about our priducts, blogs, content and more,
+              Get emails you will actually read with new products, alerts, exclusive products and more. 
+              Want to know more about how and while Travelup uses your personal information? Read our privacy policy notice.</label>
+            <input type="checkbox" id="moreinformation" name= "moreinformation">
+
+            <!-- submit button -->
+            <input type="submit" value="submit" style= "display: block; margin: 0 auto">
+           
+                      
+        </form>
+    </div> 
+    <footer class="max-w-7xl mx-auto overflow-hidden px-6 sm:py-24 lg:px-8">
+      <nav class="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12">
+        <div class="pb-6">
+          <a
+            href="/index.html"
+            class="text-lg font-semibold text-travel-orange hover:text-orange-600"
+            >Home</a
+          >
+        </div>
+        <div class="pb-6">
+          <a
+            href="/about.html"
+            class="text-lg font-semibold text-travel-orange hover:text-orange-600"
+            >About</a
+          >
+        </div>
+        <div class="pb-6">
+          <a
+            href="/shop.html"
+            class="text-lg font-semibold text-travel-orange hover:text-orange-600"
+            >Shop</a
+          >
+        </div>
+        <div class="pb-6">
+          <a
+            href="/blog.html"
+            class="text-lg font-semibold text-travel-orange hover:text-orange-600"
+            >Blog</a
+          >
+        </div>
+        <div class="pb-6">
+          <a
+            href="/contact.html"
+            class="text-lg font-semibold text-travel-orange hover:text-orange-600"
+            >Contact</a
+          >
+        </div>
+      </nav>
+      <div class="mt-10 flex justify-center space-x-10">
+        <a href="https://twitter.com/?lang=en">
+          <span class="sr-only">X</span>
+          <img src="/assets/icons/x.svg" alt="X icon" />
+        </a>
+        <a href="https://en-gb.facebook.com/">
+          <span class="sr-only">Facebook</span>
+          <img src="/assets/icons/facebook.svg" alt="Facebook icon" />
+        </a>
+        <a href="https://uk.linkedin.com/">
+          <span class="sr-only">LinkedIn</span>
+          <img src="/assets/icons/linkedin.svg" alt="LinkedIn icon" />
+        </a>
+        <a href="https://www.pinterest.co.uk/">
+          <span class="sr-only">Pinterest</span>
+          <img src="/assets/icons/pinterest.svg" alt="Pinterest icon" />
+        </a>
+        <a href="https://www.youtube.com/">
+          <span class="sr-only">YouTube</span>
+          <img src="/assets/icons/youtube.svg" alt="Youtube icon" />
+        </a>
+        <a href="https://www.instagram.com/">
+          <span class="sr-only">Instagram</span>
+          <img src="/assets/icons/instagram.svg" alt="Instagram icon" />
+        </a>
+      </div>
+      <p class="mt-10 text-center text-lg text-black">
+        &copy; 2024 TravelUp, Inc. All rights reserved.
+      </p>
+    </footer>
+    <script src="scripts/scripts.js"></script>
+  </body>
 </html>

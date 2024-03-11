@@ -27,7 +27,7 @@
       /* Style for blog entry content */
       .blog-entry-content {
         flex: 1;
-        text-align: center; /* Center text */
+        text-align: left; /* Center text */
       }
 
       .blog-entry img {
@@ -65,6 +65,7 @@
         border-radius: 10px;
         padding: 20px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-height: 370px;
       }
 
       .popular-posts h4 {
@@ -128,7 +129,7 @@
   </head>
   <body class="font-sans">
     <header>
-      <nav class="flex items-center justify-between py-2 px-4 lg:px-8">
+      <nav class="flex items-center justify-between py-2 px-4">
         <div>
           <a href="/index.html">
             <img
@@ -140,7 +141,7 @@
             />
           </a>
         </div>
-        <div class="hidden lg:flex space-x-5" id="navLinks">
+        <div class="flex space-x-5">
           <a
             href="/index.html"
             class="text-travel-orange text-lg font-semibold hover:text-orange-600"
@@ -167,46 +168,7 @@
             >Contact</a
           >
         </div>
-        <!-- Hamburger menu icon -->
-        <div class="block lg:hidden">
-          <img
-            src="/assets/icons/Hamburger_icon.svg"
-            alt="Menu"
-            id="menuIcon"
-            class="cursor-pointer"
-            width="30"
-            height="30"
-          />
-        </div>
       </nav>
-      <!-- Dropdown menu -->
-      <div class="dropdown-menu hidden" id="dropdownMenu">
-        <a
-          href="/index.html"
-          class="text-travel-orange text-lg font-semibold hover:text-orange-600 block py-2"
-          >Home</a
-        >
-        <a
-          href="/about.html"
-          class="text-travel-orange text-lg font-semibold hover:text-orange-600 block py-2"
-          >About</a
-        >
-        <a
-          href="/shop.html"
-          class="text-travel-orange text-lg font-semibold hover:text-orange-600 block py-2"
-          >Shop</a
-        >
-        <a
-          href="/blog.html"
-          class="text-travel-orange text-lg font-semibold hover:text-orange-600 block py-2"
-          >Blog</a
-        >
-        <a
-          href="/contact.html"
-          class="text-travel-orange text-lg font-semibold hover:text-orange-600 block py-2"
-          >Contact</a
-        >
-      </div>
       <img
         src="/assets/images/neom-StbFt6TU1xs-unsplash.jpg"
         alt="Hero image"

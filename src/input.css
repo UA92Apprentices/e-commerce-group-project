@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.cta-textbox {
+  top: 200px;
+  left: 120px;
+}

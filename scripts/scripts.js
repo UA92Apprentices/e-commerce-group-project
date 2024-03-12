@@ -16,7 +16,7 @@ function topFunction() {
     // Use native smooth scrolling
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
+      behavior: "smooth"
     });
   } else {
     // Scroll to the top for browsers that do not support smooth scrolling

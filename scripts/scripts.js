@@ -24,11 +24,6 @@ function topFunction() {
   }
 }
 
-// Add a scroll event listener to handle scroll detection
-window.onscroll = function () {
-  handleScroll();
-};
-
 // Cookie Banner
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -52,4 +47,24 @@ document.addEventListener("DOMContentLoaded", function () {
     // Add a class to make the banner visible after 5 seconds
     cookieBanner.classList.add("opacity-100");
   }, 5000);
+});
+
+// Add a scroll event listener to handle scroll detection
+window.onscroll = function () {
+  handleScroll();
+};
+
+// Scroll to product section
+
+document.addEventListener("DOMContentLoaded", function () {
+  const links = document.querySelectorAll('a[href^="#"]');
+  links.forEach((link) => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      const targetId = this.getAttribute("href");
+      document.querySelector(targetId).scrollIntoView({
+        behavior: "smooth"
+      });
+    });
+  });
 });

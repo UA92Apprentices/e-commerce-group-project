@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "hero-pattern": "url('/images/team-photo 1.svg')",
+        "hero-pattern": "url('/images/team-photo 1.svg')"
       },
       fontFamily: {
         sans: ['Poppins']

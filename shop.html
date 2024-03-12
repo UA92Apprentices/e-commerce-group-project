@@ -1,0 +1,616 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/output.css" rel="stylesheet" />
+    <link href="/src/input.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>TravelUp - Shop</title>
+  </head>
+  <body class="font-sans">
+    <header>
+      <nav class="flex items-center justify-between py-2 px-4">
+        <div>
+          <a href="/index.html">
+            <img
+              src="/assets/logo/travelup.svg"
+              alt="TravelUp logo"
+              width="169"
+              height="100"
+              class="py-2 mr-5"
+            />
+          </a>
+        </div>
+        <div class="flex space-x-5">
+          <a
+            href="/index.html"
+            class="text-travel-orange text-base font-semibold hover:text-orange-600 md:text-lg xl:text-xl"
+            >Home</a
+          >
+          <a
+            href="/about.html"
+            class="text-travel-orange text-base font-semibold hover:text-orange-600 md:text-lg xl:text-xl"
+            >About</a
+          >
+          <a
+            href="/shop.html"
+            class="text-travel-orange text-base font-semibold hover:text-orange-600 md:text-lg xl:text-xl"
+            >Shop</a
+          >
+          <a
+            href="/blog.html"
+            class="text-travel-orange text-base font-semibold hover:text-orange-600 md:text-lg xl:text-xl"
+            >Blog</a
+          >
+          <a
+            href="/contact.html"
+            class="text-travel-orange text-base font-semibold hover:text-orange-600 md:text-lg xl:text-xl"
+            >Contact</a
+          >
+        </div>
+      </nav>
+      <div class="relative">
+        <img
+          src="/assets/images/saksham-gangwar-gPnovpRp0S8-unsplash.jpg"
+          alt="Hero image"
+          class="w-full h-96 object-cover"
+        />
+        <p
+          class="max-w-xl mx-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-xl text-white text-center px-4 py-2 rounded-lg z-10 md:text-3xl xl:text-4xl"
+        >
+          Shop our travel item trends throughout all of our product range
+        </p>
+      </div>
+    </header>
+    <main>
+      <section class="max-w-screen-d mx-auto py-12 px-8">
+        <h1 class="py-12 text-5xl text-travel-orange font-medium text-center">
+          Travel Shop
+        </h1>
+        <h2 class="pb-4 text-3xl font-semibold">Collections</h2>
+        <div
+          class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8"
+        >
+          <a href="#travel-tech" class="group">
+            <div
+              class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg sm:aspect-h-3 sm:aspect-w-2"
+            >
+              <img
+                src="/assets/images/joan-tran-reEySFadyJQ-unsplash.png"
+                alt="A green thermal bottle."
+                class="h-full w-full object-cover object-center group-hover:opacity-75"
+              />
+            </div>
+            <div class="mt-4 flex items-center justify-between">
+              <h3 class="text-travel-orange text-xl font-semibold">
+                Travel Tech
+              </h3>
+            </div>
+            <p class="mt-1 text-sm font-medium">
+              Browse our travel tech selection for the latest gadgets and
+              accessories to enhance your journey and streamline your adventures
+            </p>
+          </a>
+          <a href="#accessories" class="group">
+            <div
+              class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg sm:aspect-h-3 sm:aspect-w-2"
+            >
+              <img
+                src="/assets/images/kuiye-chen-NuOGFo4PudE-unsplash 1.png"
+                alt="Paper card sitting upright in walnut card holder on desk."
+                class="h-full w-full object-cover object-center group-hover:opacity-75"
+              />
+            </div>
+            <div class="mt-4 flex items-center justify-between">
+              <h3 class="text-travel-orange text-xl font-semibold">
+                Accessories
+              </h3>
+            </div>
+            <p class="mt-1 text-sm font-medium">
+              Explore our accessory section for the perfect finishing touch to
+              elevate your style
+            </p>
+          </a>
+          <a href="#health-beauty" class="group">
+            <div
+              class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg sm:aspect-h-3 sm:aspect-w-2"
+            >
+              <img
+                src="/assets/images/curology-wK0h-mlvfuc-unsplash.png"
+                alt="Textured gray felt pouch for paper cards with snap button flap and elastic pen holder loop."
+                class="h-full w-full object-cover object-center group-hover:opacity-75"
+              />
+            </div>
+            <div class="mt-4 flex items-center justify-between">
+              <h3 class="text-travel-orange text-xl font-semibold">
+                Health &amp; Beauty
+              </h3>
+            </div>
+            <p class="mt-1 text-sm font-medium">
+              Discover our health and beauty collection for products designed to
+              enhance your well-being and radiate your natural beauty
+            </p>
+          </a>
+        </div>
+      </section>
+      <section>
+        <img
+          src="/assets/images/sale-banner.svg"
+          alt="Plane in the sky"
+          class="w-full h-auto object-cover"
+        />
+      </section>
+      <section class="max-w-7xl mx-auto px-4 py-16 space-y-12">
+        <div id="travel-tech">
+          <div class="sm:flex sm:items-baseline sm:justify-between">
+            <h2 class="text-2xl font-bold">Travel Tech Products</h2>
+          </div>
+          <div
+            class="mt-6 grid grid-cols-1 gap-y-10 gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-x-8"
+          >
+            <div class="group relative">
+              <a href="#">
+                <div
+                  class="h-96 w-full overflow-hidden rounded-lg sm:aspect-h-3 sm:aspect-w-2 group-hover:opacity-75 sm:h-auto"
+                >
+                  <img
+                    src="/assets/images/Airtag2 1.svg"
+                    alt="Airtags"
+                    class="w-full h-96 object-cover object-center"
+                  />
+                </div>
+                <h3 class="mt-4 text-travel-orange text-lg font-semibold">
+                  Airtags
+                </h3>
+              </a>
+              <p class="mt-1 text-sm">
+                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+              </p>
+            </div>
+            <div class="group relative">
+              <a href="#">
+                <div
+                  class="h-96 w-full overflow-hidden rounded-lg sm:aspect-h-3 sm:aspect-w-2 group-hover:opacity-75 sm:h-auto"
+                >
+                  <img
+                    src="/assets/images/Belkinwireless 1.svg"
+                    alt="Belkin wireless charger"
+                    class="w-full h-96 object-cover object-center"
+                  />
+                </div>
+                <h3 class="mt-4 text-travel-orange text-lg font-semibold">
+                  Belkin Wireless Charger
+                </h3>
+              </a>
+              <p class="mt-1 text-sm">
+                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+              </p>
+            </div>
+            <div class="group relative">
+              <a href="#">
+                <div
+                  class="h-96 w-full overflow-hidden rounded-lg sm:aspect-h-3 sm:aspect-w-2 group-hover:opacity-75 sm:h-auto"
+                >
+                  <img
+                    src="/assets/images/Boseheadphones 1.svg"
+                    alt="Bose headphones"
+                    class="w-full h-96 object-cover object-center"
+                  />
+                </div>
+                <h3 class="mt-4 text-travel-orange text-lg font-semibold">
+                  Bose Headphones
+                </h3>
+              </a>
+              <p class="mt-1 text-sm">
+                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+              </p>
+            </div>
+          </div>
+          <div class="flex justify-end items-center mt-4">
+            <button
+              class="text-travel-orange font-semibold hover:text-orange-600"
+            >
+              More Travel Tech &rarr;
+            </button>
+          </div>
+        </div>
+        <div id="accessories">
+          <div class="sm:flex sm:items-baseline sm:justify-between">
+            <h2 class="text-2xl font-bold">Accessories</h2>
+          </div>
+          <div
+            class="mt-6 grid grid-cols-1 gap-y-10 gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-x-8"
+          >
+            <div class="group relative">
+              <a href="#">
+                <div
+                  class="h-96 w-full overflow-hidden rounded-lg sm:aspect-h-3 sm:aspect-w-2 group-hover:opacity-75 sm:h-auto"
+                >
+                  <img
+                    src="/assets/images/travelpillow.jpg"
+                    alt="Travel pillow"
+                    class="w-full h-96 object-cover object-center"
+                  />
+                </div>
+                <h3 class="mt-4 text-travel-orange text-lg font-semibold">
+                  Travel Pillow
+                </h3>
+              </a>
+              <p class="mt-1 text-sm">
+                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+              </p>
+            </div>
+            <div class="group relative">
+              <a href="#">
+                <div
+                  class="h-96 w-full overflow-hidden rounded-lg sm:aspect-h-3 sm:aspect-w-2 group-hover:opacity-75 sm:h-auto"
+                >
+                  <img
+                    src="/assets/images/traveldocs.jpg"
+                    alt="Document holder"
+                    class="w-full h-96 object-cover object-center"
+                  />
+                </div>
+                <h3 class="mt-4 text-travel-orange text-lg font-semibold">
+                  Travel Documents Holder
+                </h3>
+              </a>
+              <p class="mt-1 text-sm">
+                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+              </p>
+            </div>
+            <div class="group relative">
+              <a href="#">
+                <div
+                  class="h-96 w-full overflow-hidden rounded-lg sm:aspect-h-3 sm:aspect-w-2 group-hover:opacity-75 sm:h-auto"
+                >
+                  <img
+                    src="/assets/images/Passport holder.jpg"
+                    alt="Passport holder"
+                    class="w-full h-96 object-cover object-center"
+                  />
+                </div>
+                <h3 class="mt-4 text-travel-orange text-lg font-semibold">
+                  Passport Holder
+                </h3>
+              </a>
+              <p class="mt-1 text-sm">
+                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+              </p>
+            </div>
+          </div>
+          <div class="flex justify-end items-center mt-4">
+            <button
+              class="text-travel-orange font-semibold hover:text-orange-600"
+            >
+              More Accessories &rarr;
+            </button>
+          </div>
+        </div>
+        <div id="health-beauty">
+          <div class="sm:flex sm:items-baseline sm:justify-between">
+            <h2 class="text-2xl font-bold">Health &amp; Beauty</h2>
+          </div>
+          <div
+            class="mt-6 grid grid-cols-1 gap-y-10 gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-x-8"
+          >
+            <div class="group relative">
+              <a href="#">
+                <div
+                  class="h-96 w-full overflow-hidden rounded-lg sm:aspect-h-3 sm:aspect-w-2 group-hover:opacity-75 sm:h-auto"
+                >
+                  <img
+                    src="/assets/images/eyemask.jpg"
+                    alt="Eyemask"
+                    class="w-full h-96 object-cover object-center"
+                  />
+                </div>
+                <h3 class="mt-4 text-travel-orange text-lg font-semibold">
+                  Eyemask
+                </h3>
+              </a>
+              <p class="mt-1 text-sm">
+                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+              </p>
+            </div>
+            <div class="group relative">
+              <a href="#">
+                <div
+                  class="h-96 w-full overflow-hidden rounded-lg sm:aspect-h-3 sm:aspect-w-2 group-hover:opacity-75 sm:h-auto"
+                >
+                  <img
+                    src="/assets/images/hydrating skincare.jpg"
+                    alt="Hydration skincare set"
+                    class="w-full h-96 object-cover object-center"
+                  />
+                </div>
+                <h3 class="mt-4 text-travel-orange text-lg font-semibold">
+                  Hydration Skincare Set
+                </h3>
+              </a>
+              <p class="mt-1 text-sm">
+                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+              </p>
+            </div>
+            <div class="group relative">
+              <a href="#">
+                <div
+                  class="h-96 w-full overflow-hidden rounded-lg sm:aspect-h-3 sm:aspect-w-2 group-hover:opacity-75 sm:h-auto"
+                >
+                  <img
+                    src="/assets/images/kiehls sanitizer and hand cream.jpg"
+                    alt="Hand sanitiser"
+                    class="w-full h-96 object-cover object-center"
+                  />
+                </div>
+                <h3 class="mt-4 text-travel-orange text-lg font-semibold">
+                  Kiels Hand Sanitiser
+                </h3>
+              </a>
+              <p class="mt-1 text-sm">
+                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+              </p>
+            </div>
+          </div>
+          <div class="flex justify-end items-center mt-4">
+            <button
+              class="text-travel-orange font-semibold hover:text-orange-600"
+            >
+              More Health &amp; Beauty &rarr;
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="max-w-7xl mx-auto py-24 sm:px-2 sm:py-32 lg:px-4">
+        <div
+          class="max-w-2xl mx-auto grid grid-cols-1 gap-x-8 gap-y-12 px-4 lg:max-w-none lg:grid-cols-2 lg:gap-y-16"
+        >
+          <div class="sm:flex items-center">
+            <div class="sm:flex-shrink-0">
+              <div class="flow-root">
+                <img
+                  class="h-16 w-16"
+                  src="assets/icons/icons8-shipping-50.png"
+                  alt="Free delivery icon"
+                />
+              </div>
+            </div>
+            <div class="mt-3 sm:ml-3 sm:mt-0">
+              <h3 class="text-travel-orange text-lg font-semibold">
+                Free delivery
+              </h3>
+              <p class="mt-2 text-base">
+                Order now and you&#039;ll get delivery absolutely free. Well,
+                it&#039;s not actually free, we just price it into the products.
+                Someone&#039;s paying for it, and it&#039;s not us.
+              </p>
+            </div>
+          </div>
+          <div class="sm:flex items-center">
+            <div class="sm:flex-shrink-0">
+              <div class="flow-root">
+                <img
+                  class="h-16 w-16"
+                  src="assets/icons/icons8-warranty-80.png"
+                  alt="Warranty icon"
+                />
+              </div>
+            </div>
+            <div class="mt-3 sm:ml-3 sm:mt-0">
+              <h3 class="text-travel-orange text-lg font-semibold">
+                10-year warranty
+              </h3>
+              <p class="mt-2 text-base">
+                We have a 10 year warranty with every product that you purchase,
+                whether thats a new pen or organizer, you can be sure we&#039;ll
+                stand behind it.
+              </p>
+            </div>
+          </div>
+          <div class="sm:flex items-center">
+            <div class="sm:flex-shrink-0">
+              <div class="flow-root">
+                <img
+                  class="h-16 w-16"
+                  src="assets/icons/icons8-returns-64.png"
+                  alt="Exchanges icon"
+                />
+              </div>
+            </div>
+            <div class="mt-3 sm:ml-3 sm:mt-0">
+              <h3 class="text-travel-orange text-lg font-semibold">
+                Exchanges
+              </h3>
+              <p class="mt-2 text-base">
+                We understand that when your product arrives you might not
+                particularly like it, or you ordered the wrong thing. Conditions
+                apply here.
+              </p>
+            </div>
+          </div>
+          <div class="sm:flex items-center">
+            <div class="sm:flex-shrink-0">
+              <div class="flow-root">
+                <img
+                  class="h-12 w-12"
+                  src="assets/icons/icons8-sustainability-50.png"
+                  alt="Sustainability icon"
+                />
+              </div>
+            </div>
+            <div class="mt-3 sm:ml-3 sm:mt-0">
+              <h3 class="text-travel-orange text-lg font-semibold">
+                For the planet
+              </h3>
+              <p class="mt-2 text-base">
+                Like you, we love the planet, and so we&#039;ve pledged 1% of
+                all sales to the preservation and restoration of the natural
+                environment.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="px-12 pb-12 md:pb-0">
+        <div
+          class="max-w-7xl mx-auto grid grid-cols-1 gap-10 border border-travel-orange py-12 px-12 shadow-2xl rounded-lg lg:grid-cols-12"
+        >
+          <div class="max-w-xl text-3xl font-bold md:text-4xl lg:col-span-7">
+            <h2 class="inline">Want product news and updates?</h2>
+            <p class="inline">Sign up for our newsletter.</p>
+          </div>
+          <form class="max-w-md w-full self-center lg:col-span-5">
+            <div
+              class="flex flex-col gap-y-4 md:flex-row md:gap-y-0 md:gap-x-4"
+            >
+              <label for="email-address" class="sr-only">Email address</label>
+              <input
+                id="email-address"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+                class="flex-auto rounded-md px-3 py-2 text-black shadow-sm ring-1 ring-inset ring-travel-orange focus:ring-2 focus:ring-inset focus:ring-travel-orange md:text-sm border-travel-orange"
+                placeholder="Enter your email"
+              />
+              <!-- TODO: Going forward we can have this redirect to a success page or even have a modal to confirm it has been successful. -->
+              <button
+                type="submit"
+                class="flex-none rounded-md bg-travel-orange px-3.5 py-2.5 text-white text-sm font-semibold shadow-sm hover:bg-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-500"
+              >
+                Subscribe
+              </button>
+            </div>
+            <p class="mt-4 text-sm">
+              We care about your data. Read our
+              <a
+                target="_blank"
+                href="/privacy-policy.html"
+                class="text-travel-orange font-semibold hover:underline"
+                >privacy&nbsp;policy</a
+              >.
+            </p>
+          </form>
+        </div>
+      </section>
+      <!-- Scroll Button -->
+      <button
+        onclick="topFunction()"
+        id="my-btn"
+        title="Go to top"
+        class="hidden fixed bottom-20 right-10 z-50 bg-travel-orange text-white font-bold py-2 px-4 rounded-lg hover:bg-orange-600"
+      >
+        Top
+      </button>
+      <!-- Cookie Banner -->
+      <div
+        id="cookie-banner"
+        class="fixed inset-x-0 z-10 bottom-0 flex flex-col justify-between gap-x-8 gap-y-4 p-4 bg-white border-t border-t-travel-orange md:flex-row md:items-center lg:px-8 opacity-0 transition-opacity duration-500 ease-in-out"
+      >
+        <p class="max-w-4xl text-sm text-black">
+          Discover our curated selection of travel essentials, gear, and
+          accessories—an ensemble designed to enhance your journeys and enrich
+          your experiences on the road. Embrace these offerings at your
+          discretion, knowing they are crafted to elevate your adventures with
+          both practicality and pleasure. See our
+          <a
+            href="/privacy-policy.html"
+            class="font-semibold text-travel-orange"
+            >cookie policy</a
+          >.
+        </p>
+        <div class="flex flex-none items-center gap-x-5">
+          <button
+            id="accept-cookies"
+            type="submit"
+            class="rounded-md bg-travel-orange px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
+          >
+            Accept all
+          </button>
+          <button
+            id="reject-cookies"
+            type="submit"
+            class="px-3 py-2 text-sm font-semibold text-black shadow-lg"
+          >
+            Reject all
+          </button>
+        </div>
+      </div>
+    </main>
+    <footer class="max-w-7xl mx-auto overflow-hidden px-6 sm:py-24 lg:px-8">
+      <nav class="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12">
+        <div class="pb-6">
+          <a
+            href="/index.html"
+            class="text-travel-orange text-base font-semibold hover:text-orange-600 md:text-lg xl:text-xl"
+            >Home</a
+          >
+        </div>
+        <div class="pb-6">
+          <a
+            href="/about.html"
+            class="text-travel-orange text-base font-semibold hover:text-orange-600 md:text-lg xl:text-xl"
+            >About</a
+          >
+        </div>
+        <div class="pb-6">
+          <a
+            href="/shop.html"
+            class="text-travel-orange text-base font-semibold hover:text-orange-600 md:text-lg xl:text-xl"
+            >Shop</a
+          >
+        </div>
+        <div class="pb-6">
+          <a
+            href="/blog.html"
+            class="text-travel-orange text-base font-semibold hover:text-orange-600 md:text-lg xl:text-xl"
+            >Blog</a
+          >
+        </div>
+        <div class="pb-6">
+          <a
+            href="/contact.html"
+            class="text-travel-orange text-base font-semibold hover:text-orange-600 md:text-lg xl:text-xl"
+            >Contact</a
+          >
+        </div>
+      </nav>
+      <div class="mt-10 flex justify-center space-x-10">
+        <a href="https://twitter.com/?lang=en">
+          <span class="sr-only">X</span>
+          <img src="/assets/icons/x.svg" alt="X icon" />
+        </a>
+        <a href="https://en-gb.facebook.com/">
+          <span class="sr-only">Facebook</span>
+          <img src="/assets/icons/facebook.svg" alt="Facebook icon" />
+        </a>
+        <a href="https://uk.linkedin.com/">
+          <span class="sr-only">LinkedIn</span>
+          <img src="/assets/icons/linkedin.svg" alt="LinkedIn icon" />
+        </a>
+        <a href="https://www.pinterest.co.uk/">
+          <span class="sr-only">Pinterest</span>
+          <img src="/assets/icons/pinterest.svg" alt="Pinterest icon" />
+        </a>
+        <a href="https://www.youtube.com/">
+          <span class="sr-only">YouTube</span>
+          <img src="/assets/icons/youtube.svg" alt="Youtube icon" />
+        </a>
+        <a href="https://www.instagram.com/">
+          <span class="sr-only">Instagram</span>
+          <img src="/assets/icons/instagram.svg" alt="Instagram icon" />
+        </a>
+      </div>
+      <p class="mt-10 text-center text-lg text-black">
+        &copy; 2024 TravelUp, Inc. All rights reserved.
+      </p>
+    </footer>
+    <script src="/scripts/scripts.js"></script>
+  </body>
+</html>

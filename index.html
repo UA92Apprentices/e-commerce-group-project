@@ -15,7 +15,9 @@
   </head>
   <body class="font-sans">
     <header>
-      <nav class="flex items-center justify-between py-2 px-4">
+      <nav
+        class="flex items-center justify-between space-x-4 py-2 px-4 md:space-x-0"
+      >
         <div>
           <a href="/index.html">
             <img
@@ -23,34 +25,34 @@
               alt="TravelUp logo"
               width="169"
               height="100"
-              class="py-2"
+              class="mr-5 md:py-2"
             />
           </a>
         </div>
         <div class="flex space-x-5">
           <a
             href="/index.html"
-            class="text-travel-orange text-lg font-semibold hover:text-orange-600"
+            class="text-travel-orange text-xs font-semibold hover:text-orange-600 md:text-base xl:text-lg"
             >Home</a
           >
           <a
             href="/about.html"
-            class="text-travel-orange text-lg font-semibold hover:text-orange-600"
+            class="text-travel-orange text-xs font-semibold hover:text-orange-600 md:text-base xl:text-lg"
             >About</a
           >
           <a
             href="/shop.html"
-            class="text-travel-orange text-lg font-semibold hover:text-orange-600"
+            class="text-travel-orange text-xs font-semibold hover:text-orange-600 md:text-base xl:text-lg"
             >Shop</a
           >
           <a
             href="/blog.html"
-            class="text-travel-orange text-lg font-semibold hover:text-orange-600"
+            class="text-travel-orange text-xs font-semibold hover:text-orange-600 md:text-base xl:text-lg"
             >Blog</a
           >
           <a
             href="/contact.html"
-            class="text-travel-orange text-lg font-semibold hover:text-orange-600"
+            class="text-travel-orange text-xs font-semibold hover:text-orange-600 md:text-base xl:text-lg"
             >Contact</a
           >
         </div>
@@ -62,14 +64,14 @@
           class="w-full h-96 object-cover"
         />
         <p
-          class="max-w-xl mx-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-3xl text-white text-center px-4 py-2 rounded-lg z-10"
+          class="max-w-xl mx-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-xl text-white text-center px-4 py-2 rounded-lg z-10 md:text-3xl xl:text-4xl"
         >
           Shop our travel item trends throughout all of our product range
         </p>
-        <div class="absolute bottom-16 w-full text-center">
+        <div class="absolute bottom-12 w-full text-center">
           <a href="/shop.html">
             <button
-              class="px-4 py-2 text-white text-base font-medium rounded-lg bg-travel-orange hover:bg-orange-600"
+              class="px-4 py-2 text-white text-sm font-medium rounded-lg bg-travel-orange hover:bg-orange-600 md:text-base xl:text-lg"
             >
               Product Range
             </button>
@@ -80,7 +82,7 @@
     <main>
       <!-- Product Grid -->
       <section class="max-w-7xl mx-auto px-4 py-12">
-        <div class="grid grid-cols-3 gap-10 py-6">
+        <div class="grid grid-cols-1 gap-10 py-6 md:grid-cols-3">
           <div class="group relative cursor-pointer">
             <a href="/shop.html">
               <div
@@ -92,7 +94,7 @@
                   class="w-full h-96 object-cover"
                 />
                 <span
-                  class="absolute bottom-0 left-0 bg-black text-xl text-white px-4 py-2 rounded-lg"
+                  class="absolute bottom-0 left-0 bg-black text-base text-white px-4 py-2 rounded-lg md:text-lg lg:text-xl"
                   >Travel Tech</span
                 >
               </div>
@@ -109,7 +111,7 @@
                   class="w-full h-96 object-cover"
                 />
                 <span
-                  class="absolute bottom-0 left-0 bg-black text-xl text-white px-4 py-2 rounded-lg"
+                  class="absolute bottom-0 left-0 bg-black text-base text-white px-4 py-2 rounded-lg md:text-lg lg:text-xl"
                   >Accessories</span
                 >
               </div>
@@ -126,7 +128,7 @@
                   class="w-full h-96 object-cover"
                 />
                 <span
-                  class="absolute bottom-0 left-0 bg-black text-xl text-white px-4 py-2 rounded-lg"
+                  class="absolute bottom-0 left-0 bg-black text-base text-white px-4 py-2 rounded-lg md:text-lg lg:text-xl"
                   >Health &amp; Beauty</span
                 >
               </div>
@@ -137,7 +139,7 @@
           <a href="/shop.html">
             <button
               type="button"
-              class="px-4 py-2 text-white text-base font-medium rounded-lg bg-travel-orange hover:bg-orange-600"
+              class="px-4 py-2 text-white text-sm font-medium rounded-lg bg-travel-orange hover:bg-orange-600 md:text-base"
             >
               Shop Products
             </button>
@@ -145,43 +147,49 @@
         </div>
       </section>
       <!-- Product Feature section -->
-      <section
-        id="product-of-the-week"
-        class="py-12 bg-gradient-to-b from-gray-100 to-white"
-      >
-        <a href="/shop.html">
-          <div
-            class="max-w-screen-md mx-auto flex justify-center items-center space-x-24"
-          >
-            <img
-              src="/assets/images/marissa-grootes-D4jRahaUaIc-unsplash 1.svg"
-              alt="Bag with accessories"
-            />
-            <div class="flex flex-col justify-center space-y-6">
-              <h2 class="text-3xl font-semibold">
-                <span class="text-travel-orange">Product</span> of the week
-              </h2>
-              <p class="text-base">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                convallis iaculis sapien at pretium.
-              </p>
-            </div>
+      <section class="py-12 bg-gradient-to-b from-gray-100 to-white">
+        <div
+          class="max-w-screen-md mx-auto grid grid-cols-1 justify-center items-center md:grid-cols-2"
+        >
+          <div class="flex justify-center items-center">
+            <a href="/shop.html">
+              <img
+                src="/assets/images/Airtag.svg"
+                alt="Airtag"
+                class="shadow-lg"
+                width="319"
+                height="300"
+              />
+            </a>
           </div>
-        </a>
+          <div
+            class="flex flex-col justify-center items-center mt-6 px-6 space-y-6 md:mt-0 md:ml-4 md:px-0"
+          >
+            <h2 class="text-3xl font-semibold">
+              <span class="text-travel-orange">Product</span> of the week
+            </h2>
+            <p class="text-base">
+              Introducing the
+              <span class="text-travel-orange font-semibold">AirTags</span> -
+              the perfect solution for keeping track of your belongings. With
+              precision finding using the Find My app, never lose sight of what
+              matters most.
+            </p>
+          </div>
+        </div>
       </section>
-      <!-- Jobs section -->
-      <section class="max-w-screen-xl mx-auto px-4">
+      <!-- Blog section -->
+      <section class="max-w-screen-xl mx-auto px-4 md:px-6 xl:px-8">
         <div class="max-w-xl py-12">
-          <h2 class="text-black text-3xl font-bold">
-            We’re always looking for awesome people to join us
+          <h2 class="text-black text-xl font-bold md:text-2xl xl:text-3xl">
+            Take a look at our blogs that our travelling community share
           </h2>
-          <p class="mt-6 text-base text-black">
-            Diam nunc lacus lacus aliquam turpis enim. Eget hac velit est
-            euismod lacus. Est non placerat nam arcu. Cras purus nibh cursus sit
-            eu in id.
+          <p class="mt-6 text-base text-black md:text-lg xl:text-xl">
+            Capture adventures, choosing your favourite accessories, travel in
+            style with the best products on the market.
           </p>
         </div>
-        <div class="grid grid-cols-2 gap-x-8">
+        <div class="grid grid-cols-1 gap-x-8 xl:grid-cols-2">
           <div class="flex justify-center items-center">
             <img
               src="/assets/images/image-1200x1200 (1).jpg"
@@ -190,79 +198,80 @@
               height="600"
             />
           </div>
-          <div>
+          <div class="mt-8">
             <a
               href="/blog.html"
               class="block p-4 space-y-4 border-b border-b-gray-200"
             >
-              <h3 class="text-lg font-semibold">
-                The Art of Designing for Impact
+              <h3 class="text-sm font-semibold md:text-base xl:text-lg">
+                5 Must-Have Travel Accessories to Elevate Your Adventures...
               </h3>
-              <p class="text-sm">
+              <p class="text-xs md:text-sm">
                 Discover the secrets behind impactful design and how it can
                 transform user experiences.
               </p>
-              <div class="flex space-x-8">
+              <div class="flex space-x-8 text-sm">
                 <span class="block">John Doe</span>
-                <span class="block">Full-time designer</span>
+                <span class="block">Full-time Traveller</span>
               </div>
             </a>
             <a
               href="/blog.html"
               class="block p-4 space-y-4 border-b border-b-gray-200"
             >
-              <h3 class="text-lg font-semibold">
-                Mastering the Art of Designing for Impact
+              <h3 class="text-sm font-semibold md:text-base xl:text-lg">
+                Skincare Tips for Jet-Setters
               </h3>
-              <p class="text-sm">
-                Dive deep into the principles of impactful design and learn how
-                to create experiences that resonate with users.
+              <p class="text-xs md:text-sm">
+                How to Keep Your Skin Glowing While Traveling.
               </p>
-              <div class="flex space-x-8">
+              <div class="flex space-x-8 text-sm">
                 <span class="block">Jane Smith</span>
-                <span class="block">UX Design Specialist</span>
+                <span class="block">Tuple Travels</span>
               </div>
             </a>
             <a
               href="/blog.html"
               class="block p-4 space-y-4 border-b border-b-gray-200"
             >
-              <h3 class="text-lg font-semibold">
-                The Complete Guide to Building a Website
+              <h3 class="text-sm font-semibold md:text-base xl:text-lg">
+                From Drone Photography to 360-Degree Cameras
               </h3>
-              <p class="text-sm">
-                Explore step-by-step instructions and best practices for
-                creating your own website, from design concepts to deployment
-                strategies.
+              <p class="text-xs md:text-sm">
+                Capturing Your Travel Adventures in Technicolor.
               </p>
-              <div class="flex space-x-8">
+              <div class="flex space-x-8 text-sm">
                 <span class="block">John Smith</span>
-                <span class="block">Web Development Expert</span>
+                <span class="block">SavvyCal</span>
               </div>
             </a>
-            <a
-              href="/blog.html"
-              class="block p-4 space-y-4 border-b border-b-gray-200"
-            >
-              <h3 class="text-lg font-semibold">
-                Mastering Backend Development: A Comprehensive Guide
+            <a href="/blog.html" class="block p-4 space-y-4">
+              <h3 class="text-sm font-semibold md:text-base xl:text-lg">
+                Traveling with Kids: Essential Accessories to Keep Your Little
+                Ones Happy
               </h3>
-              <p class="text-sm">
-                Delve into the world of backend development and master essential
-                concepts, tools, and frameworks to build powerful server-side
-                applications.
+              <p class="text-xs md:text-sm">
+                How to make family trips a breeze with our essential
+                kid-friendly accessories. Keep your little ones happy and
+                entertained on the go!
               </p>
-              <div class="flex space-x-8">
+              <div class="flex space-x-8 text-sm">
                 <span class="block">Emily Johnson</span>
-                <span class="block">Backend Development Instructor</span>
+                <span class="block">TravelUp Expert</span>
               </div>
             </a>
-            <div class="flex justify-end items-center mt-4 space-x-2">
+            <div
+              class="flex justify-end items-center mt-4 space-x-2 text-xs md:text-sm xl:text-base"
+            >
               <a href="/blog.html">
-                <button class="text-travel-orange text-base font-semibold">
+                <button
+                  class="text-travel-orange text-sm font-semibold hover:text-orange-600 md:text-base"
+                >
                   View more posts
                 </button>
-                <span class="text-travel-orange">&rarr;</span>
+                <span class="text-travel-orange hover:text-orange-600"
+                  >&rarr;</span
+                >
               </a>
             </div>
           </div>
@@ -316,27 +325,13 @@
         </div>
       </section>
       <!-- CTA Banner section-->
-      <section class="max-w-screen-2xl mx-auto mt-32 relative">
+      <section class="max-w-screen-2xl mx-auto mt-32">
         <a href="/shop.html">
           <img
-            src="/assets/images/tiffany-nutt-0ClfreiNppM-unsplash 1.png"
+            src="/assets/images/ctabanner-bike.svg"
             alt="Orange Bicycle"
-            class="inset-0 w-full h-full object-cover"
+            width="1920"
           />
-          <div class="cta-textbox absolute">
-            <h2 class="text-5xl text-travel-orange font-bold pb-8 max-w-lg">
-              Our biggest sale is now live!
-            </h2>
-            <div class="mt-16">
-              <a href="/shop.html">
-                <button
-                  class="bg-travel-orange text-lg font-semibold text-white px-4 py-2 rounded-xl"
-                >
-                  Shop Now
-                </button>
-              </a>
-            </div>
-          </div>
         </a>
       </section>
       <!-- Newsletter -->
@@ -349,7 +344,7 @@
             <p class="inline">Sign up for our newsletter.</p>
           </div>
           <form class="max-w-md w-full self-center lg:col-span-5">
-            <div class="flex gap-x-4">
+            <div class="flex flex-col gap-y-4 gap-x-4 md:gap-y-0 md:flex-row">
               <label for="email-address" class="sr-only">Email address</label>
               <input
                 id="email-address"
@@ -476,35 +471,35 @@
         <div class="pb-6">
           <a
             href="/index.html"
-            class="text-lg font-semibold text-travel-orange hover:text-orange-600"
+            class="text-travel-orange text-base font-semibold hover:text-orange-600 md:text-lg xl:text-xl"
             >Home</a
           >
         </div>
         <div class="pb-6">
           <a
             href="/about.html"
-            class="text-lg font-semibold text-travel-orange hover:text-orange-600"
+            class="text-travel-orange text-base font-semibold hover:text-orange-600 md:text-lg xl:text-xl"
             >About</a
           >
         </div>
         <div class="pb-6">
           <a
             href="/shop.html"
-            class="text-lg font-semibold text-travel-orange hover:text-orange-600"
+            class="text-travel-orange text-base font-semibold hover:text-orange-600 md:text-lg xl:text-xl"
             >Shop</a
           >
         </div>
         <div class="pb-6">
           <a
             href="/blog.html"
-            class="text-lg font-semibold text-travel-orange hover:text-orange-600"
+            class="text-travel-orange text-base font-semibold hover:text-orange-600 md:text-lg xl:text-xl"
             >Blog</a
           >
         </div>
         <div class="pb-6">
           <a
             href="/contact.html"
-            class="text-lg font-semibold text-travel-orange hover:text-orange-600"
+            class="text-travel-orange text-base font-semibold hover:text-orange-600 md:text-lg xl:text-xl"
             >Contact</a
           >
         </div>
@@ -535,7 +530,9 @@
           <img src="/assets/icons/instagram.svg" alt="Instagram icon" />
         </a>
       </div>
-      <p class="mt-10 text-center text-lg text-black">
+      <p
+        class="mt-10 pb-4 text-center text-sm text-black md:text-base lg:text-lg"
+      >
         &copy; 2024 TravelUp, Inc. All rights reserved.
       </p>
     </footer>

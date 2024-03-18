@@ -12,12 +12,48 @@
       rel="stylesheet"
     />
     <title>TravelUp - Shop</title>
+    <style>
+      @media (min-width: 768px) {
+        .dropdown {
+          display: none;
+        }
+      }
+
+      .dropdown {
+        float: right;
+        position: relative;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        overflow: auto;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        right: 0;
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #f1f1f1;
+      }
+
+      .show {
+        display: block;
+      }
+    </style>
   </head>
   <body class="font-sans">
     <header>
-      <nav
-        class="flex items-center justify-between space-x-4 py-2 px-4 md:space-x-0"
-      >
+      <nav class="flex items-center justify-between py-2 px-4">
         <div>
           <a href="/index.html">
             <img
@@ -25,36 +61,74 @@
               alt="TravelUp logo"
               width="169"
               height="100"
-              class="mr-5 md:py-2"
+              class="py-2"
             />
           </a>
         </div>
-        <div class="flex space-x-5">
+        <div class="hidden md:flex space-x-5" id="navLinks">
           <a
             href="/index.html"
-            class="text-travel-orange text-xs font-semibold hover:text-orange-600 md:text-base xl:text-lg"
+            class="text-travel-orange text-lg font-semibold hover:text-orange-600"
             >Home</a
           >
           <a
             href="/about.html"
-            class="text-travel-orange text-xs font-semibold hover:text-orange-600 md:text-base xl:text-lg"
+            class="text-travel-orange text-lg font-semibold hover:text-orange-600"
             >About</a
           >
           <a
             href="/shop.html"
-            class="text-travel-orange text-xs font-semibold hover:text-orange-600 md:text-base xl:text-lg"
+            class="text-travel-orange text-lg font-semibold hover:text-orange-600"
             >Shop</a
           >
           <a
             href="/blog.html"
-            class="text-travel-orange text-xs font-semibold hover:text-orange-600 md:text-base xl:text-lg"
+            class="text-travel-orange text-lg font-semibold hover:text-orange-600"
             >Blog</a
           >
           <a
             href="/contact.html"
-            class="text-travel-orange text-xs font-semibold hover:text-orange-600 md:text-base xl:text-lg"
+            class="text-travel-orange text-lg font-semibold hover:text-orange-600"
             >Contact</a
           >
+        </div>
+        <div class="dropdown">
+          <img
+            src="/assets/icons/Hamburger_icon.svg"
+            alt="Menu"
+            id="menuIcon"
+            class="cursor-pointer"
+            width="30"
+            height="30"
+            onclick="toggleDropdown()"
+          />
+          <div id="myDropdown" class="dropdown-content">
+            <a
+              href="/index.html"
+              class="text-travel-orange text-lg font-semibold hover:text-orange-600 block py-2"
+              >Home</a
+            >
+            <a
+              href="/about.html"
+              class="text-travel-orange text-lg font-semibold hover:text-orange-600 block py-2"
+              >About</a
+            >
+            <a
+              href="/shop.html"
+              class="text-travel-orange text-lg font-semibold hover:text-orange-600 block py-2"
+              >Shop</a
+            >
+            <a
+              href="/blog.html"
+              class="text-travel-orange text-lg font-semibold hover:text-orange-600 block py-2"
+              >Blog</a
+            >
+            <a
+              href="/contact.html"
+              class="text-travel-orange text-lg font-semibold hover:text-orange-600 block py-2"
+              >Contact</a
+            >
+          </div>
         </div>
       </nav>
       <div class="relative">

@@ -68,3 +68,34 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+function toggleDropdown() {
+  var dropdown = document.getElementById("myDropdown");
+  var menuIcon = document.getElementById("menuIcon");
+  dropdown.classList.toggle("show");
+  // Toggle between hamburger and close icon
+  if (dropdown.classList.contains("show")) {
+    menuIcon.src = "/assets/icons/Close_icon.webp";
+    menuIcon.alt = "Close";
+  } else {
+    menuIcon.src = "/assets/icons/Hamburger_icon.svg";
+    menuIcon.alt = "Menu";
+  }
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function (event) {
+  if (!event.target.matches("#menuIcon")) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains("show")) {
+        openDropdown.classList.remove("show");
+        // Reset icon to hamburger when dropdown is closed
+        var menuIcon = document.getElementById("menuIcon");
+        menuIcon.src = "/assets/icons/Hamburger_icon.svg";
+        menuIcon.alt = "Menu";
+      }
+    }
+  }
+};
